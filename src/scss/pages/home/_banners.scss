@@ -79,9 +79,12 @@
   }
   &__text-img {
     height: 100%;
-    width: auto;
+    width: 100%;
     object-position: center;
     object-fit: contain;
+    // @include _767 {
+    //   width: auto;
+    // }
   }
   &__text-img-wrap {
     height: resp-size(83);
