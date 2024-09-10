@@ -59,7 +59,7 @@
   &__title {
     @include font(Miama-Nueva, 400, sans-serif);
     font-size: resp-size(55);
-    font-weight: 700;
+    // font-weight: 700;
     line-height: 1.4em;
     @include _767 {
       max-width: resp-size(195, 363);
@@ -79,7 +79,8 @@
   &__text-img {
     height: 100%;
     width: auto;
-
+    object-position: center;
+    object-fit: contain;
   }
   &__text-img-wrap {
     height: resp-size(83);
