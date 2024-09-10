@@ -53,7 +53,7 @@
     text-align: right;
     @include _767 {
       gap: resp-size(10, 363);
-      max-width: resp-size(255, 363);
+      max-width: calc((255 / 363) * 100vw);
     }
   }
   &__title {
