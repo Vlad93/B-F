@@ -1,4 +1,5 @@
-@include font-face("Miama-Nueva", "miamanueva", 400, italic);
+@include font-face("Miama-Nueva", "miamanueva");
+// @include font-face("Miama-Nueva", "miamanueva", 700, italic);
 @include font-face("Montserrat", "Montserrat-Light", 300);
 @include font-face("Montserrat", "Montserrat-Regular", 400);
 @include font-face("Montserrat", "Montserrat-Medium", 500);

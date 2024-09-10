@@ -46,20 +46,21 @@
     z-index: 1;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     align-items: flex-end;
     gap: resp-size(24);
     max-width: 70%;
     margin-left: auto;
     text-align: right;
     @include _767 {
-      gap: resp-size(10, 363);
+      gap: calc((10 / 363) * 100vw);
       max-width: calc((255 / 363) * 100vw);
     }
   }
   &__title {
     @include font(Miama-Nueva, 400, sans-serif);
     font-size: resp-size(55);
-    // font-weight: 700;
+    font-weight: 700;
     line-height: 1.4em;
     @include _767 {
       max-width: resp-size(195, 363);
