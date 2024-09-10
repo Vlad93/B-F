@@ -1,0 +1,16 @@
+.swiper-horizontal>.swiper-scrollbar {
+  position: relative;
+  margin-top: 16px;
+  height: 7px;
+}
+.swiper-scrollbar {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, .25);
+}
+.swiper-scrollbar-drag {
+  background-color: #000;
+}
+.swiper-vertical>.swiper-scrollbar {
+  right: 1px;
+}

@@ -1,0 +1,45 @@
+.submenu {
+  // padding-left: resp-size(28, 363);
+  // position: absolute;
+  // top: 98%;
+  // width: max-content;
+  // border-radius: 16px;
+  // background: transparent;
+  // transform-origin: 0 0;
+  // transition: opacity .4s ease, visibility .3s ease, transform .3s ease;
+  @include _992 {
+    padding-left: resp-size(28, 363);
+    position: static;
+    flex-basis: 100%;
+    border-radius: 0;
+    opacity: 1;
+    visibility: visible;
+    background: none;
+    display: none;
+  }
+  &:where(:not(.is-active)) {
+    opacity: .0;
+    visibility: hidden;
+    @include _992 {
+      opacity: 1;
+      transform: scaleY(1);
+      visibility: visible;
+    }
+  }
+  &__item:not(:last-of-type) {
+    margin-bottom: resp-size(10, 363);
+  }
+  &__link {
+    font-size: resp-size(16, 363);;
+    outline: none;
+    @include interactive {
+      &:hover {
+        color: $white;
+      }
+    }
+    @include _992 {
+      line-height: 1.35em;
+      color: $white;
+    }
+  }
+}

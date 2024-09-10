@@ -1,0 +1,193 @@
+.header {
+  position: relative;
+  z-index: 3;
+  &__side {
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-bottom: resp-size(64);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: resp-size(176);
+    background-color: rgba(243, 243, 243, 0.57);
+  }
+  &__messangers-content {
+    margin-bottom: resp-size(120);
+  }
+  &__next-section-btn {
+    display: flex;
+    justify-content: center;
+    width: resp-size(45);
+    height: resp-size(96);
+    transition: transform .3s ease;
+    @include interactive {
+      &:hover {
+        transform: translateY(5px);
+      }
+    }
+    &-img {
+      height: 100%;
+    }
+  }
+  &__desk-wrap {
+    display: flex;
+    align-items: flex-start;
+    @include _767 {
+      display: none;
+    }
+  }
+  &__top {
+    padding: resp-size(8) resp-size(176) resp-size(8) 0;
+    width: 100%;
+    background-color: $primary;
+  }
+  &__logo {
+    width: 100%;
+    margin-bottom: resp-size(69);
+  }
+  .logo__img {
+    width: 100%;
+  }
+  &__mob {
+    position: relative;
+    display: none;
+    background-color: $primary;
+    @include _767 {
+      display: block;
+    }
+    &-btn {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      z-index: 2;
+      justify-content: center;
+      border: none;
+      outline: none;
+      gap: resp-size(10, 363);
+      width: resp-size(43, 363);
+      height: resp-size(33, 363);
+      &-line,
+      &::before,
+      &::after  {
+        content: '';
+        display: block;
+        width: resp-size(21, 363);
+        height: resp-size(5, 363);
+        background-color: $white;
+        border-radius: resp-size(4, 363);
+        transform-origin: 0 0;
+        transition: transform .3s ease, width .3s ease;
+      }
+      &-line {
+        margin: 0 auto;
+      }
+      &::after {
+        margin-left: 0;
+      }
+      &::before {
+        margin-left: auto;
+      }
+      &.active {
+        &::after {
+          width: 80%;
+          transform: translate(calc((9 / 363) * 100vw),calc((-1 / 363) * 100vw)) rotate(-45deg);
+        }
+        & .header__mob-btn-line {
+          transform: scale(0);
+        }
+        &::before {
+          width: 80%;
+          transform: translate(calc((4 / 363) * 100vw),calc((3 / 363) * 100vw)) rotate(45deg);
+        }
+      }
+    }
+  }
+  &__mob-wrap {
+    padding: resp-size(10, 363) resp-size(25, 363);
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+    align-items: center;
+  }
+  &__logo_mob {
+    margin: 0;
+    width: resp-size(54, 363);
+  }
+  &__mob-content {
+    padding: resp-size(54, 363) resp-size(21, 363) resp-size(26, 363);
+    max-height: 100vh;
+    overflow-y: auto;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: resp-size(51,363);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    width: 100%;
+    z-index: 1;
+    height: auto;
+    transform: translateY(-5%);
+    background-color: $primary;
+    transition: transform .3s ease, opacity .3s ease, visibility .3s ease;
+    &.open {
+      opacity: 1;
+      transform: translateY(0%);
+      visibility: visible;
+
+    }
+  }
+  &__wrap {
+    display: flex;
+    align-items: center;
+    @include _992 {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+      color: $primary;
+      & .header__logo {
+        display: none;
+      }
+    }
+  }
+  &__phone-wrap {
+    margin-right: 32px;
+    @include _1200 {
+      margin-right: 20px;
+    }
+    @include _992 {
+      margin: 0;
+      color: $primary;
+    }
+  }
+  &__cooperation-btn {
+    font-size: 14px;
+    flex-basis: 240px;
+    @include _992 {
+      max-width: 240px;
+      width: 100%;
+      flex: auto;
+    }
+  }
+  &-menu__list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: resp-size(40);
+    @include _767 {
+      align-items: flex-start;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: resp-size(20, 363);
+    }
+  }
+  &__bottom {
+    padding: 26px 0 30px;
+    @include _992 {
+      padding: 0;
+    }
+  }
+}

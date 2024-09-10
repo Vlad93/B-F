@@ -1,0 +1,20 @@
+.section {
+  &-top .container {
+    padding-left: resp-size(176);
+    @include _767 {
+      padding: 0 resp-size(24, 363);
+    }
+  }
+  &-title {
+    margin-bottom: resp-size(30);
+    font-size: resp-size(48);
+    line-height: 1.4em;
+    &.center {
+      text-align: center;
+    }
+    @include _767 {
+      margin-bottom: resp-size(20, 363);
+      font-size: resp-size(24, 363);
+    }
+  }
+}

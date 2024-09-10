@@ -1,0 +1,225 @@
+.footer {
+  padding: resp-size(35) 0 resp-size(43);
+  background-color: $primary;
+  color: #fff;
+  @include _767 {
+    padding: resp-size(35, 363) 0 resp-size(14, 363);
+  }
+  &__main-info {
+    padding-bottom: resp-size(54);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include _767 {
+      padding-bottom: resp-size(30, 363);
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      gap: resp-size(30, 363);
+    }
+  }
+  &__address {
+    display: flex;
+    align-items: center;
+    max-width: resp-size(355);
+    gap: resp-size(13);
+    @include _767 {
+      align-self: flex-start;
+      max-width: 100%;
+      gap: resp-size(13, 363);
+    }
+    &-icon {
+      width: resp-size(18);
+      @include _767 {
+        width: resp-size(18, 363);
+      }
+    }
+    &-text {
+      font-size: resp-size(20);
+      line-height: 1.2em;
+      @include _767 {
+        font-size: resp-size(20, 363);
+      }
+    }
+  }
+  &__worktime {
+    display: flex;
+    align-items: center;
+    gap: resp-size(12);
+    max-width: resp-size(355);
+    @include _767 {
+      align-self: flex-start;
+      max-width: 100%;
+      gap: resp-size(13, 363);
+    }
+    &-icon {
+      width: resp-size(25);
+      @include _767 {
+        width: resp-size(23, 363);
+      }
+    }
+    &-text {
+      font-size: resp-size(20);
+      line-height: 1.2em;
+      @include _767 {
+        font-size: resp-size(20, 363);
+      }
+    }
+  }
+  &__phone {
+    display: flex;
+    align-items: center;
+    gap: resp-size(12);
+    @include _767 {
+      gap: resp-size(12, 363);
+      align-self: flex-start;
+    }
+    transform-origin: 0 0 ;
+    transition: transform .3s ease;
+    &-icon {
+      width: resp-size(23);
+      @include _767 {
+        width: resp-size(23, 363);
+      }
+    }
+    &-num {
+      @extend .menu__link;
+      position: relative;
+      font-weight: 600;
+      @include _992 {
+        font-size: 14px;
+      }
+      @include _767 {
+        font-size: resp-size(20, 363);
+      }
+    }
+    @include interactive {
+      &:hover {
+        transform: scale(1.03);
+      }
+      &:hover &-icon {
+        animation: 1s ease ring;
+      }
+      &:hover &-num {
+        transform: none;
+      }
+      &:hover &-num::after {
+        transform: scale(1);
+      }
+    }
+  }
+  &__logo {
+    width: 87px;
+    @include _992 {
+      width: 55px;
+    }
+    @include _767 {
+      width: resp-size(87, 363);
+    }
+  }
+  &__phone-wrap {
+    margin-bottom: 18px;
+    & .phone__working-time {
+      letter-spacing: 0.3px;
+      &::before {
+        display: none;
+      }
+    }
+  }
+  &__bottom {
+    padding-top: resp-size(45);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    @include _767 {
+      padding-top: resp-size(26, 363);
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: flex-start;
+      gap: resp-size(26, 363);
+    }
+    &-created {
+      &-link {
+        display: block;
+        width: resp-size(110);
+        height: auto;
+        & img {
+          width: 100%;
+        }
+        @include _1200 {
+          width: 110px;
+        }
+        @include _767 {
+          width: resp-size(110, 363);
+        }
+      }
+    }
+    &-copyrights {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      font-size: resp-size(16);
+      line-height: 1.3em;
+      @include _1200 {
+        font-size: 16px;
+      }
+      @include _992 {
+        font-size: 14px;
+      }
+      @include _767 {
+        display: block;
+        font-size: resp-size(12, 363);
+      }
+    }
+  }
+}
+
+.footer-nav  {
+  position: relative;
+  &::after, &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100vw;
+    height: 1px;
+    background-color: #fff;
+  }
+  &::before {
+    top: 0;
+    left: resp-size(-176);
+    @include _767 {
+      left: resp-size(-24, 363);
+    }
+  }
+  &::after {
+    bottom: 0;
+    right: resp-size(-176);
+    @include _767 {
+      right: resp-size(-24, 363);
+    }
+  }
+  &__list {
+    padding: resp-size(7) 0 resp-size(11);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: resp-size(40);
+    @include _767 {
+      width: max-content;
+      padding: resp-size(23, 363) 0 resp-size(23, 363);
+      margin: 0 auto;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: resp-size(1, 363);
+    }
+  }
+  &__link {
+    @include _992 {
+      font-size: 14px;
+    }
+    @include _767 {
+      font-size: resp-size(20, 363);
+    }
+  }
+}

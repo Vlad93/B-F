@@ -1,0 +1,114 @@
+.messangers {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: resp-size(20);
+    align-items: center;
+    @include _767 {
+      flex-direction: row;
+      gap: resp-size(10, 363);
+    }
+  }
+  &__link {
+    position: relative;
+    width: resp-size(45);
+    height: resp-size(45);
+    display: block;
+    background-color: #EBE9E9;
+    border-radius: resp-size(4);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform .3s ease;
+    @include _767 {
+      width: resp-size(30, 363);
+      height: resp-size(30, 363);
+      border-radius: resp-size(4, 363);
+    }
+    &-icon {
+      display: block;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: resp-size(21);
+      height: resp-size(21);
+      fill: #454545;
+      transition: none;
+      transition: fill .3s ease;
+      &.tg {
+        width: resp-size(24);
+        height: resp-size(24);
+      }
+      &.youtube {
+        width: resp-size(25);
+        height: resp-size(16);
+      }
+      &.viber {
+        width: resp-size(25);
+        height: resp-size(26);
+      }
+      &.skype {
+        width: resp-size(23);
+        height: resp-size(23);
+      }
+      &.tiktok {
+        width: resp-size(17);
+        height: resp-size(20);
+      }
+      @include _767 {
+        width: resp-size(15, 363);
+        height: resp-size(15, 363);
+        &.tg {
+          width: resp-size(16, 363);
+          height: resp-size(16, 363);
+        }
+        &.youtube {
+          width: resp-size(16, 363);
+          height: resp-size(11, 363);
+        }
+        &.viber {
+          width: resp-size(17, 363);
+          height: resp-size(18, 363);
+        }
+        &.skype {
+          width: 15px;
+          height: 15px;
+        }
+        &.tiktok {
+          width: resp-size(12, 363);
+          height: resp-size(14, 363);
+        }
+      }
+    }
+    @include interactive {
+      &:hover {
+        transform: scale(1.08);
+        & .messangers__link-icon {
+          &.tg {
+            fill: $tg;
+          }
+          &.whats {
+            fill: $whats;
+          }
+          &.inst {
+            fill: $inst;
+          }
+          &.youtube {
+            fill: $youtube;
+          }
+          &.viber {
+            fill: $viber;
+          }
+          &.skype {
+            fill: $skype;
+          }
+          &.tiktok {
+            fill: $tiktok;
+          }
+        }
+      }
+    }
+  }
+}
