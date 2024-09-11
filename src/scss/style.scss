@@ -40,8 +40,10 @@
 // @import "components/popups/exit";
 // @import "components/popups/cp";
 // @import "components/popups/discuss";
-// @import "components/popups/order";
-// @import "components/contacts-bottom";
+@import "components/popups/popup-form";
+@import "components/popups/order";
+@import "components/popups/thanks";
+@import "components/preloader";
 
 @import "layout/header";
 @import "layout/footer";
@@ -49,6 +51,14 @@
 
 @import "pages/home/banners";
 @import "pages/home/new-products";
+@import "pages/home/new-collection";
+@import "pages/home/open-more";
+@import "pages/home/hit";
+@import "pages/home/last-size";
+@import "pages/home/sale";
+@import "pages/home/plus-size";
+@import "pages/home/seo";
+@import "pages/home/sertificates";
 // @import "pages/home/calc";
 // @import "pages/home/for-whom";
 // @import "pages/home/problem-solution";

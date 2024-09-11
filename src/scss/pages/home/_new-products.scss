@@ -1,9 +1,48 @@
 .section-new-products {
-  padding: resp-size(95) 0 resp-size(88);
+  padding: resp-size(95) 0 0;
   @include _767 {
-    padding: resp-size(35) 0 resp-size(66);
+    padding: resp-size(35, 363) 0 0;
   }
+  // &__swiper {
+  //   padding: resp-size(8);
+  //   @include _767 {
+  //     padding: 0;
+  //     padding-bottom: resp-size(15, 360);
+  //   }
+  // }
   &__swiper-wrapper {
-    padding: resp-size(8);
+    // padding: resp-size(8);
+    margin: resp-size(8);
+    @include _767 {
+      padding: 0;
+      padding-bottom: resp-size(15, 360);
+    }
+  }
+  & .product-card__btn {
+    @include _767 {
+      opacity: 0;
+      height: 0;
+      padding: 0;
+    }
+  }
+  & .product-card {
+    @include _767 {
+      padding-bottom: resp-szie(17, 360);
+      box-shadow: none;
+    }
+    &__size {
+      font-size: 16px;
+      line-height: 1em;
+      @include _767 {
+        font-size: resp-size(16, 360);
+      }
+    }
+    &__sizes-item {
+      border: 1px solid $primary;
+      padding: resp-size(7) resp-size(10);
+      @include _767 {
+        padding: resp-size(7, 360) resp-size(7, 360);
+      }
+    }
   }
 }

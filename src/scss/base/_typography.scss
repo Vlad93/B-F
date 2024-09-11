@@ -1,5 +1,6 @@
 @include font-face("Miama-Nueva", "miamanueva");
 // @include font-face("Miama-Nueva", "miamanueva", 700, italic);
+@include font-face("Montserrat", "Montserrat-ExtraLight", 100);
 @include font-face("Montserrat", "Montserrat-Light", 300);
 @include font-face("Montserrat", "Montserrat-Regular", 400);
 @include font-face("Montserrat", "Montserrat-Medium", 500);
@@ -30,10 +31,9 @@
 
 .section-title {
   margin-bottom: 10px;
-  margin-left: auto;
-  margin-right: auto;
+  // margin-left: auto;
+  // margin-right: auto;
   color: $primary;
-  text-align: center;
   @include _767 {
     font-size: 24px;
     & .title-accent {

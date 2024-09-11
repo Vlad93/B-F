@@ -17,4 +17,10 @@
       font-size: resp-size(24, 363);
     }
   }
+  &:last-child {
+    padding-bottom: resp-size(44);
+    @include _767 {
+      padding-bottom: resp-size(61, 360)
+    };
+  }
 }

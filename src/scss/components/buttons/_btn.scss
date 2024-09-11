@@ -1,5 +1,5 @@
 .btn {
-  padding: 9px 20px;
+  padding: resp-size(17);
   display: inline-block;
   text-align: center;
   font-size: resp-size(24);
@@ -10,6 +10,7 @@
   background: $white;
   transition: background-color .3s ease, border-color .3s ease, color .3s ease;
   @include _767 {
+    padding: resp-size(15, 360);
     border: 1px solid #000;
     padding: resp-size(10, 360) resp-size(16, 360);
     font-size: resp-size(16, 360);

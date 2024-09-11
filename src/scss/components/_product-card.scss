@@ -1,4 +1,5 @@
 .product-card {
+  position: relative;
   cursor: pointer;
   display: flex;
   flex-direction: column;
@@ -64,13 +65,17 @@
     width: 100%;
     padding: resp-size(14) resp-size(13);
     @include _767 {
-      padding: resp-size(5) resp-size(7) resp-size(8);
+      padding: resp-size(5, 360) resp-size(7, 360) resp-size(8, 360);
     }
   }
   &__title {
     font-weight: 700;
     font-size: 16px;
     line-height: 1.4em;
+    @include _767 {
+      font-size: resp-size(16, 360);
+      line-height: 1.2em;
+    }
   }
   &__color-list {
     display: flex;
@@ -92,21 +97,23 @@
     flex-wrap: wrap;
     gap: resp-size(11);
     @include _767 {
-      gap: resp-size(10, 360);
+      gap: resp-size(5, 360);
     }
   }
   &__sizes-item {
     border: 1px solid $primary;
     padding: resp-size(7) resp-size(10);
     @include _767 {
-      padding: resp-size(7, 360) resp-size(7, 360);
+      display: flex;
+      padding: resp-size(5, 360) resp-size(5, 360);
     }
   }
   &__size {
     font-size: 16px;
     line-height: 1em;
     @include _767 {
-      font-size: resp-size(16, 360);
+      font-size: resp-size(10, 360);
+      line-height: 1.2em;
     }
   }
   &__btn {
@@ -121,6 +128,10 @@
       top: 0;
       right: 0;
       bottom: 0;
+    }
+    @include _767 {
+      padding: resp-size(6, 360) resp-size(10, 360);
+      font-size: resp-size(12, 360);
     }
   }
 }
