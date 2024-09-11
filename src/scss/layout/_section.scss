@@ -1,7 +1,13 @@
 .section {
   &-top .container {
     padding-left: resp-size(176);
+    height: calc((901 / 1920)* 100vw);
+    @include _992 {
+      height: calc((878 / 1920)* 100vw);
+    }
     @include _767 {
+      height: auto;
+      min-height: resp-size(378, 363);
       padding: 0 resp-size(24, 363);
     }
   }

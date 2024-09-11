@@ -1076,7 +1076,32 @@ $(document).ready(function () {
       },
     });
   });
+  const gallary__swiper = new Swiper('.gallary__swiper', {
+    slidesPerView: 4,
+    spaceBetween: '1%',
+    watchSlidesProgress: true,
+    autoplay: {
+        delay: 2500,
+    },
+    pagination: {
+        el: ".gallary__wrapper .swiper-pagination",
+    },
+    breakpoints:{
+        768:{
+            slidesPerView: 4,
+            spaceBetween: '1%',
+        },
+        578:{
+            slidesPerView: 2,
+            spaceBetween: '1%',
 
+        },
+        0:{
+            slidesPerView: 1.5,
+            spaceBetween: '1%',
+        }
+    }
+})
 
     $('.tabs-slider').each(function () {
       var $container = $(this).find('.swiper-container');
