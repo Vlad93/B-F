@@ -3,6 +3,9 @@
   @include _767 {
     padding: resp-size(35, 363) 0 0;
   }
+  &__title-wrap {
+    position: relative;
+  }
   // &__swiper {
   //   padding: resp-size(8);
   //   @include _767 {
@@ -20,9 +23,7 @@
   }
   & .product-card__btn {
     @include _767 {
-      opacity: 0;
-      height: 0;
-      padding: 0;
+      max-width: 100%;
     }
   }
   & .product-card {

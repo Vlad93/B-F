@@ -11,6 +11,9 @@
       padding: 0 resp-size(24, 363);
     }
   }
+  &-title-wrap {
+    position: relative;
+  }
   &-title {
     margin-bottom: resp-size(30);
     font-size: resp-size(48);

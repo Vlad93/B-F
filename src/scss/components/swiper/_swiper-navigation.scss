@@ -2,3 +2,53 @@
   background: url('../img/icons/arrowLeft-black.svg') no-repeat center / 24px 24px, $white;
   pointer-events: none;
 }
+.swiper__navigation-btn-icon {
+  stroke: #000;
+  fill: transparent;
+  transition: stroke .3s ease;
+}
+.swiper__navigation {
+  display: flex;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  gap: resp-size(10);
+  z-index: 2;
+  @include _767 {
+    display: none;
+  }
+}
+.swiper__navigation-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: resp-size(40);
+  height: resp-size(40);
+  border: 1px solid #000;
+  transition: background-color .3s ease;
+  &.swiper-button-disabled {
+    opacity: .4;
+    pointer-events: none;
+    cursor: not-allowed;
+  }
+  &.swiper-button-lock {
+    display: none;
+  }
+  @include interactive {
+    &:hover {
+      background-color: #000;
+    }
+    &:hover &-icon {
+      stroke: #fff;
+    }
+
+  }
+  &-next &-icon {
+    transform: rotate(-90deg);
+  }
+  &-prev &-icon {
+    transform: rotate(90deg);
+  }
+}

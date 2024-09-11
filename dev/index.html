@@ -88,17 +88,17 @@
           <nav class="header__nav">
             <ul class="header-menu__list menu">
               <li class="menu__item">
-                <a class="menu__link" href="">
+                <a class="menu__link" href="catalog">
                   Каталог
                 </a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="">
+                <a class="menu__link" href="about">
                   О нас
                 </a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="">
+                <a class="menu__link" href="cooperation">
                   Сотрудничество
                 </a>
               </li>
@@ -108,7 +108,7 @@
                 </a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="">
+                <a class="menu__link" href="contacts">
                   Контакты
                 </a>
               </li>
@@ -129,7 +129,7 @@
           <nav class="header__mob-nav">
             <ul class="header-menu__list menu">
               <li class="menu__item dropdown">
-                <a class="menu__link" href="">
+                <a class="menu__link" href="catalog">
                   Каталог
                 </a>
                 <button type="button" class="menu__dropdown-btn" aria-label="Открыть подменю">
@@ -161,22 +161,22 @@
                 </ul>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="">
+                <a class="menu__link" href="about">
                   О нас
                 </a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="">
+                <a class="menu__link" href="cooperation">
                   Сотрудничество
                 </a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="">
+                <a class="menu__link" href="#plus-size">
                   Plus Size
                 </a>
               </li>
               <li class="menu__item">
-                <a class="menu__link" href="">
+                <a class="menu__link" href="contacts">
                   Контакты
                 </a>
               </li>
@@ -263,9 +263,23 @@
     </section>
     <section class="section-new-products section" id="#next-section">
       <div class="container">
-        <h2 class="section-new-products__title title center section-title">
-          Новинки
-        </h2>
+        <div class="section-new-products__title-wrap title-wrap">
+          <h2 class="section-new-products__title title center section-title">
+            Новинки
+          </h2>
+          <div class="swiper__navigation section-new-products__swiper-navigation">
+            <button class="swiper__navigation-btn-prev swiper__navigation-btn">
+              <svg class="swiper__navigation-btn-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.25 7.5L10 13.75L3.75 7.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </button>
+            <button class="swiper__navigation-btn-next swiper__navigation-btn">
+              <svg class="swiper__navigation-btn-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.25 7.5L10 13.75L3.75 7.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </button>
+          </div>
+        </div>
         <div class="section-new-products__swiper-wrap">
           <div class="section-new-products__swiper new-swiper swiper" newProductsSlider_js>
             <div class="section-new-products__swiper-wrapper new-swiper__wrapper swiper-wrapper">
@@ -615,16 +629,28 @@
     </section>
     <section class="section-hit section">
       <div class="container">
-        <div class="section-hit__title-wrap">
+        <div class="section-hit__title-wrap section-title-wrap">
           <h2 class="section-hit__title title section-title">
             Хит продаж
           </h2>
           <a href="#catalog" class="section-hit__btn section-hit__btn_desk btn">
             Смотреть все
           </a>
+          <div class="swiper__navigation section-hit__swiper-navigation">
+            <button class="swiper__navigation-btn-prev swiper__navigation-btn">
+              <svg class="swiper__navigation-btn-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.25 7.5L10 13.75L3.75 7.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </button>
+            <button class="swiper__navigation-btn-next swiper__navigation-btn">
+              <svg class="swiper__navigation-btn-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.25 7.5L10 13.75L3.75 7.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </button>
+          </div>
         </div>
         <div class="section-hit__swiper-wrap">
-          <div class="section-hit__swiper swiper hit-products-swiper" newProductsSlider_js>
+          <div class="section-hit__swiper swiper hit-products-swiper" hitsSlider_js>
             <div class="swiper-wrapper hit-products-swiper__wrapper">
               <div class="new-swiper__slide swiper-slide">
                 <div class="section-hit__product-card-hover-wrap">
@@ -1133,13 +1159,25 @@
     </section>
     <section class="section-last-size section">
       <div class="container container-full section-last-size__container">
-        <div class="section-hit__title-wrap">
+        <div class="section-hit__title-wrap section-title-wrap">
           <h2 class="section-hit__title title section-title">
             Последний Размер
           </h2>
           <a href="#catalog" class="section-hit__btn section-hit__btn_desk btn">
             Смотреть все
           </a>
+          <div class="swiper__navigation section-last-size__swiper-navigation">
+            <button class="swiper__navigation-btn-prev swiper__navigation-btn">
+              <svg class="swiper__navigation-btn-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.25 7.5L10 13.75L3.75 7.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </button>
+            <button class="swiper__navigation-btn-next swiper__navigation-btn">
+              <svg class="swiper__navigation-btn-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.25 7.5L10 13.75L3.75 7.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </button>
+          </div>
         </div>
         <div class="section-last-size__swiper-wrap">
           <div class="section-last-size__swiper" lastSizeSlider_js>
@@ -1211,13 +1249,25 @@
     </section>
     <section class="section-last-size section-plus-size section" id="plus-size">
       <div class="container container-full section-last-size__container">
-        <div class="section-hit__title-wrap">
+        <div class="section-hit__title-wrap section-title-wrap">
           <h2 class="section-hit__title title section-title">
             Plus Size
           </h2>
+          <div class="swiper__navigation section-plus-size__swiper-navigation">
+            <button class="swiper__navigation-btn-prev swiper__navigation-btn">
+              <svg class="swiper__navigation-btn-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.25 7.5L10 13.75L3.75 7.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </button>
+            <button class="swiper__navigation-btn-next swiper__navigation-btn">
+              <svg class="swiper__navigation-btn-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.25 7.5L10 13.75L3.75 7.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </button>
+          </div>
         </div>
         <div class="section-last-size__swiper-wrap">
-          <div class="section-last-size__swiper" lastSizeSlider_js>
+          <div class="section-last-size__swiper" plusSizeSlider_js>
             <div class="swiper-wrapper section-last-size__swiper-wrapper">
               <div class="swiper-slide section-last-size__swiper-slide">
                 <article class="product-card-short section-last-size__product-card">
@@ -1273,6 +1323,18 @@
     </section>
     <section class="section-sertificates section">
       <div class="container">
+        <div class="swiper__navigation section-sertificates__swiper-navigation">
+          <button class="swiper__navigation-btn-prev swiper__navigation-btn">
+            <svg class="swiper__navigation-btn-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16.25 7.5L10 13.75L3.75 7.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </button>
+          <button class="swiper__navigation-btn-next swiper__navigation-btn">
+            <svg class="swiper__navigation-btn-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16.25 7.5L10 13.75L3.75 7.5" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </button>
+        </div>
         <div class="section-sertificates__swiper-wrap">
           <div class="section-sertificates__swiper swiper" sertificateSlider_js>
             <div class="swiper-wrapper">
@@ -1328,17 +1390,17 @@
           <nav class="footer-nav">
             <ul class="footer-nav__list menu">
               <li class="footer-nav__item">
-                <a class="footer-nav__link menu__link" href="">
+                <a class="footer-nav__link menu__link" href="catalog">
                   Каталог
                 </a>
               </li>
               <li class="footer-nav__item">
-                <a class="footer-nav__link menu__link" href="">
+                <a class="footer-nav__link menu__link" href="about">
                   О нас
                 </a>
               </li>
               <li class="footer-nav__item">
-                <a class="footer-nav__link menu__link" href="">
+                <a class="footer-nav__link menu__link" href="cooperation">
                   Сотрудничество
                 </a>
               </li>
@@ -1348,7 +1410,7 @@
                 </a>
               </li>
               <li class="footer-nav__item">
-                <a class="footer-nav__link menu__link" href="">
+                <a class="footer-nav__link menu__link" href="contacts">
                   Контакты
                 </a>
               </li>

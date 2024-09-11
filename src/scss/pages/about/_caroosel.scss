@@ -12,6 +12,10 @@
 .gallary__wrapper {
   position: relative;
   margin-top: 30px;
+  padding-bottom: resp-size(48);
+  @include _767 {
+    padding-bottom: resp-size(50, 360);
+  }
 }
 
 .gallary__top,
@@ -20,6 +24,9 @@
   width: 100%;
   left: 0;
   z-index: 99;
+  @include _767 {
+    display: none;
+  }
 }
 
 .gallary__top {
@@ -53,14 +60,25 @@
   @extend .btn;
   opacity: 0;
   position: absolute;
-  max-width: 210px;
-  width: 54.545455%;
+  max-width: resp-size(369);
+  // width: 54.545455%;
   background-color: transparent;
   /* 210/385 */
-  height: 55px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   transition: .3s;
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+  @include _767 {
+    max-width: resp-size(150, 360);
+  }
 }
 
 .gallary__img:hover .gallary__button {
@@ -82,24 +100,11 @@
 }
 
 .gallary__swiper {
-  max-width: 1470px;
   // width: 93.630573%;
   /* 1470/1570 */
   margin: 0 auto;
 }
 
-.gallarySwiper__button.swiper-button-next {
-  right: 7.291667%;
-  /* 140/1920 */
-}
-
-.gallarySwiper__button.swiper-button-prev {
-  left: 7.291667%;
-  /* 140/1920 */
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
-}
 
 .pagination__line.swiper-pagination-bullets.swiper-pagination-horizontal {
   position: relative;
@@ -108,7 +113,7 @@
 
 .gallary__wrapper .pagination__line.swiper-pagination-bullets.swiper-pagination-horizontal {
   position: absolute;
-  bottom: -30px;
+  bottom: 5px;
   z-index: 999;
 }
 
@@ -137,6 +142,23 @@
     font-size: resp-size(32);
     @include _767 {
       margin-bottom: resp-size(20, 360);
+      font-size: resp-size(16, 360);
+    }
+  }
+  &__text-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: resp-size(51);
+    text-align: center;
+    @include _767 {
+      gap: resp-size(20, 360);
+    }
+  }
+  &__text {
+    font-size: resp-size(24);
+    line-height: 1.3em;
+    @include _767 {
       font-size: resp-size(16, 360);
     }
   }

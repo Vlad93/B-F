@@ -1010,17 +1010,93 @@ $(document).ready(function () {
         draggable: true,
         hide: false,
       },
+      navigation: {
+        nextEl: '.section-new-products__swiper-navigation .swiper__navigation-btn-next',
+        prevEl: '.section-new-products__swiper-navigation .swiper__navigation-btn-prev',
+      },
       breakpoints: {
+        0: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+          navigation: {
+            enabled: false,
+          },
+          scrollbar: {
+            enabled: true,
+          },
+        },
         767: {
           slidesPerView: 3,
           spaceBetween: 20,
-          // scrollbar: {
-          //   enable: false,
-          // }
+          scrollbar: {
+            enabled: false,
+          },
+          navigation: {
+            enabled: true,
+          },
         },
         992: {
           slidesPerView: 4,
           spaceBetween: 20,
+          scrollbar: {
+            enabled: false,
+          },
+          navigation: {
+            enabled: true,
+          },
+        },
+      },
+
+      observer: true,
+      observeParents: true,
+      observeSlideChildren: true,
+    });
+  });
+  $('[hitsSlider_js]').each(function () {
+    var swiper = new Swiper($(this)[0], {
+      direction: 'horizontal',
+      slidesPerView: 1,
+      spaceBetween: 10,
+      speed: 700,
+      scrollbar: {
+        el: ".new-swiper__scrollbar",
+        draggable: true,
+        hide: false,
+      },
+      navigation: {
+        nextEl: '.section-hit__swiper-navigation .swiper__navigation-btn-next',
+        prevEl: '.section-hit__swiper-navigation .swiper__navigation-btn-prev',
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+          navigation: {
+            enabled: false,
+          },
+          scrollbar: {
+            enabled: true,
+          },
+        },
+        767: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+          scrollbar: {
+            enabled: false,
+          },
+          navigation: {
+            enabled: true,
+          },
+        },
+        992: {
+          slidesPerView: 4,
+          spaceBetween: 20,
+          scrollbar: {
+            enabled: false,
+          },
+          navigation: {
+            enabled: true,
+          },
         },
       },
 
@@ -1036,17 +1112,59 @@ $(document).ready(function () {
       spaceBetween: 10,
       speed: 700,
       scrollbar: {
+        enable: true,
         el: ".swiper-scroll",
         draggable: true,
         hide: false,
       },
+      navigation: {
+        nextEl: '.section-last-size__swiper-navigation .swiper__navigation-btn-next',
+        prevEl: '.section-last-size__swiper-navigation .swiper__navigation-btn-prev',
+      },
       breakpoints: {
+        0: {
+          scrollbar: {
+            enabled: true,
+          },
+        },
         767: {
           slidesPerView: 3,
           spaceBetween: 18,
-          // scrollbar: {
-          //   enable: false,
-          // }
+          scrollbar: {
+            enabled: false,
+          },
+        },
+      },
+    });
+  });
+  $('[plusSizeSlider_js]').each(function () {
+    var swiper = new Swiper($(this)[0], {
+      direction: 'horizontal',
+      slidesPerView: 1,
+      spaceBetween: 10,
+      speed: 700,
+      scrollbar: {
+        enable: true,
+        el: ".swiper-scroll",
+        draggable: true,
+        hide: false,
+      },
+      navigation: {
+        nextEl: '.section-plus-size .swiper__navigation-btn-next',
+        prevEl: '.section-plus-size .swiper__navigation-btn-prev',
+      },
+      breakpoints: {
+        0: {
+          scrollbar: {
+            enabled: true,
+          },
+        },
+        767: {
+          slidesPerView: 3,
+          spaceBetween: 18,
+          scrollbar: {
+            enabled: false,
+          },
         },
       },
     });
@@ -1062,24 +1180,68 @@ $(document).ready(function () {
         draggable: true,
         hide: false,
       },
+      navigation: {
+        nextEl: '.section-sertificates .swiper__navigation-btn-next',
+        prevEl: '.section-sertificates .swiper__navigation-btn-prev',
+      },
       breakpoints: {
+        0: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+          scrollbar: {
+            enabled: true,
+          },
+        },
         767: {
           freeMode: true,
           slidesPerView: 'auto',
           spaceBetween: 30,
+          scrollbar: {
+            enabled: false,
+          },
         },
         1200: {
           freeMode: true,
           slidesPerView: 'auto',
           spaceBetween: 64,
+          scrollbar: {
+            enabled: false,
+          },
         }
       },
     });
+  });
+
+  var swiperMarque = new Swiper('.section-partners__swiper', {
+    slidesPerView: 3,
+    spaceBetween: 20,
+    speed: 4500,
+    loop: true,
+    allowTouchMove: false, // можно ещё отключить свайп
+    autoplay: {
+      delay: 0,
+      disableOnInteraction: false // или сделать так, чтобы восстанавливался autoplay после взаимодействия
+    },
+    breakpoints: {
+      767: {
+        slidesPerView: 4,
+        spaceBetween: 20,
+      },
+      992: {
+        slidesPerView: 4,
+        spaceBetween: 10,
+      }
+    }
   });
   const gallary__swiper = new Swiper('.gallary__swiper', {
     slidesPerView: 4,
     spaceBetween: '1%',
     watchSlidesProgress: true,
+    scrollbar: {
+      el: ".swiper-scrollbar",
+      draggable: true,
+      hide: false,
+    },
     autoplay: {
         delay: 2500,
     },
@@ -1087,19 +1249,38 @@ $(document).ready(function () {
         el: ".gallary__wrapper .swiper-pagination",
     },
     breakpoints:{
-        768:{
-            slidesPerView: 4,
-            spaceBetween: '1%',
+      0:{
+        slidesPerView: 1.5,
+        spaceBetween: '1%',
+        scrollbar: {
+          enabled: true,
         },
-        578:{
-            slidesPerView: 2,
-            spaceBetween: '1%',
-
-        },
-        0:{
-            slidesPerView: 1.5,
-            spaceBetween: '1%',
+        pagination: {
+          enabled: false,
         }
+    },
+    578:{
+      slidesPerView: 2,
+      spaceBetween: '1%',
+      scrollbar: {
+       enabled: true,
+      },
+      pagination: {
+        enabled: false,
+      }
+    },
+      767:{
+          slidesPerView: 4,
+          spaceBetween: '1%',
+          scrollbar: {
+            enabled: false,
+           },
+           pagination: {
+            enabled: true,
+          }
+      },
+
+
     }
 })
 
