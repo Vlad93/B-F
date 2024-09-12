@@ -94,7 +94,7 @@
     height: auto;
   }
   &__content-wrap {
-    padding: resp-size(94) 0 0 resp-size(73);
+    padding: resp-size(148) 0 0 resp-size(73);
     @include _767 {
       padding: 0;
       padding-top: resp-size(34, 360);
@@ -114,7 +114,7 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: resp-size(40);
+    gap: resp-size(25);
   }
   &__categories-link {
     display: inline-block;

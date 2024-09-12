@@ -1192,10 +1192,10 @@ $(document).ready(function () {
         draggable: true,
         hide: false,
       },
-      navigation: {
-        nextEl: '.section-sertificates .swiper__navigation-btn-next',
-        prevEl: '.section-sertificates .swiper__navigation-btn-prev',
-      },
+      // navigation: {
+      //   nextEl: '.section-sertificates .swiper__navigation-btn-next',
+      //   prevEl: '.section-sertificates .swiper__navigation-btn-prev',
+      // },
       breakpoints: {
         0: {
           slidesPerView: 1,
@@ -1241,7 +1241,7 @@ $(document).ready(function () {
       },
       992: {
         slidesPerView: 4,
-        spaceBetween: 10,
+        spaceBetween: 5,
       }
     }
   });
@@ -1622,6 +1622,7 @@ var galleryThumbsSwiper = new Swiper('.product-popup__gallery-swiper-thumbs', {
   scrollbar: {
     el: ".swiper-scrollbar",
     hide: false,
+    draggable: true,
   },
   breakpoints: {
     767: {
@@ -1684,6 +1685,20 @@ var popupOpen = function (e) {
       }
     }
 };
+
+jQuery(window).scroll(function($) {
+	var height = jQuery(window).scrollTop();
+	if ( height > 0 )
+		jQuery('.header').addClass('fixed');
+	else
+		jQuery('.header').removeClass('fixed');
+});
+
+$(window).on('scroll', function() {
+  var ratio = $(document).scrollTop() / (($(document).height() - $(window).height()) / 100);
+  $('.header-progress').width(ratio + "%");
+});
+
 
 
 $('img').each( function(e) {

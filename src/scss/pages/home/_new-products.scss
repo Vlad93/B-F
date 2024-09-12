@@ -15,7 +15,7 @@
   // }
   &__swiper-wrapper {
     // padding: resp-size(8);
-    margin: resp-size(8);
+    padding: calc((8 / 1920)* 100vw) calc((8 / 1920)* 100vw) calc((15 / 1920)* 100vw) calc((8 / 1920)* 100vw);
     @include _767 {
       padding: 0;
       padding-bottom: resp-size(15, 360);

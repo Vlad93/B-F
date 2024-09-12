@@ -66,6 +66,9 @@ body {
     position: fixed;
     overflow-y: scroll;
   }
+  @include _767 {
+    padding-top: resp-size(74, 360);
+  }
 }
 
 .container {

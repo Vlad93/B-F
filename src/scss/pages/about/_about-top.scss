@@ -6,7 +6,7 @@
     }
   }
   &__wrap {
-    padding-top: resp-size(137);
+    padding-top: resp-size(191);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -53,9 +53,16 @@
     }
   }
   .section-about-top {
-    width: resp-size(369);
+    max-width: resp-size(369);
+    width: 100%;
     @include _767 {
       width: 100%;
+    }
+    &__btn {
+      width: resp-size(369);
+      @include _767 {
+        width: 100%;
+      }
     }
   }
 }

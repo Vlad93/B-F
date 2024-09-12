@@ -22,9 +22,9 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     transition: transform .3s ease;
     @include _767 {
-      width: resp-size(30, 363);
-      height: resp-size(30, 363);
-      border-radius: resp-size(4, 363);
+      width: resp-size(30, 312);
+      height: resp-size(30, 312);
+      border-radius: resp-size(4, 312);
     }
     &-icon {
       display: block;
@@ -58,27 +58,27 @@
         height: resp-size(20);
       }
       @include _767 {
-        width: resp-size(15, 363);
-        height: resp-size(15, 363);
+        width: resp-size(15, 312);
+        height: resp-size(15, 312);
         &.tg {
-          width: resp-size(16, 363);
-          height: resp-size(16, 363);
+          width: resp-size(16, 312);
+          height: resp-size(16, 312);
         }
         &.youtube {
-          width: resp-size(16, 363);
-          height: resp-size(11, 363);
+          width: resp-size(16, 312);
+          height: resp-size(11, 312);
         }
         &.viber {
-          width: resp-size(17, 363);
-          height: resp-size(18, 363);
+          width: resp-size(17, 312);
+          height: resp-size(18, 312);
         }
         &.skype {
-          width: 15px;
-          height: 15px;
+          width: resp-size(15, 312);
+          height: resp-size(15, 312);
         }
         &.tiktok {
-          width: resp-size(12, 363);
-          height: resp-size(14, 363);
+          width: resp-size(12, 312);
+          height: resp-size(14, 312);
         }
       }
     }

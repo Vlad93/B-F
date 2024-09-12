@@ -27,11 +27,12 @@
     }
   }
   &__item:not(:last-of-type) {
-    margin-bottom: resp-size(10, 363);
+    margin-bottom: resp-size(9, 363);
   }
   &__link {
     font-size: resp-size(16, 363);;
     outline: none;
+    transition: color .3s ease;
     @include interactive {
       &:hover {
         color: $white;

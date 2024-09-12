@@ -85,6 +85,9 @@
             </a>
           </div>
           <div class="header__top">
+            <a href="/" class="header__logo-fixed logo" aria-label="Логотип B&F">
+              <img class="logo__img" src="img/logo-fixed.webp" alt="Logo">
+            </a>
             <nav class="header__nav">
               <ul class="header-menu__list menu">
                 <li class="menu__item">
@@ -114,16 +117,20 @@
                 </li>
               </ul>
             </nav>
+            <div class="header-progress" style="background-color: #0C0C0C;"></div>
           </div>
         </div>
         <div class="header__mob">
+          <button class="header__mob-btn menu-btn" headerBtn_JS>
+            <span class="header__mob-btn-line"></span>
+          </button>
           <div class="header__mob-wrap">
             <a href="/" class="header__logo header__logo_mob logo" aria-label="Логотип B&F">
               <img class="logo__img" src="img/logo-mob.webp" alt="Logo">
             </a>
-            <button class="header__mob-btn menu-btn" headerBtn_JS>
-              <span class="header__mob-btn-line"></span>
-            </button>
+            <a href="/" class="header__logo-fixed header__logo-fixed_mob logo" aria-label="Логотип B&F">
+              <img class="logo__img" src="img/logo-fixed.webp" alt="Logo">
+            </a>
           </div>
           <div class="header__mob-content">
             <nav class="header__mob-nav">
@@ -133,29 +140,84 @@
                     Каталог
                   </a>
                   <button type="button" class="menu__dropdown-btn" aria-label="Открыть подменю">
-                    <svg class="menu__dropdown-btn-icon" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M1.00021 -3.05176e-05C0.802463 1.19209e-05 0.609164 0.0586834 0.444755 0.168568C0.280345 0.278452 0.152205 0.434616 0.0765352 0.617315C0.000864983 0.800015 -0.0189381 1.00105 0.0196295 1.195C0.058197 1.38895 0.153402 1.56712 0.293212 1.70697L5.29321 6.70697C5.48074 6.89444 5.73505 6.99976 6.00021 6.99976C6.26538 6.99976 6.51969 6.89444 6.70721 6.70697L11.7072 1.70697C11.847 1.56712 11.9422 1.38895 11.9808 1.195C12.0194 1.00105 11.9996 0.800015 11.9239 0.617315C11.8482 0.434616 11.7201 0.278452 11.5557 0.168568C11.3913 0.0586834 11.198 1.19209e-05 11.0002 -3.05176e-05L1.00021 -3.05176e-05Z" fill="white"/>
+                    <svg class="menu__dropdown-btn-icon" width="12" height="7" viewBox="0 0 12 7" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M1.00021 -3.05176e-05C0.802463 1.19209e-05 0.609164 0.0586834 0.444755 0.168568C0.280345 0.278452 0.152205 0.434616 0.0765352 0.617315C0.000864983 0.800015 -0.0189381 1.00105 0.0196295 1.195C0.058197 1.38895 0.153402 1.56712 0.293212 1.70697L5.29321 6.70697C5.48074 6.89444 5.73505 6.99976 6.00021 6.99976C6.26538 6.99976 6.51969 6.89444 6.70721 6.70697L11.7072 1.70697C11.847 1.56712 11.9422 1.38895 11.9808 1.195C12.0194 1.00105 11.9996 0.800015 11.9239 0.617315C11.8482 0.434616 11.7201 0.278452 11.5557 0.168568C11.3913 0.0586834 11.198 1.19209e-05 11.0002 -3.05176e-05L1.00021 -3.05176e-05Z" />
                     </svg>
                   </button>
                   <ul class="menu__submenu submenu">
                     <li class="submenu__item">
                       <a href="#" class="submenu__link">
-                        Майки
+                        Брюки
                       </a>
                     </li>
                     <li class="submenu__item">
                       <a href="#" class="submenu__link">
-                        Платья
+                        Блузы
                       </a>
                     </li>
                     <li class="submenu__item">
                       <a href="#" class="submenu__link">
-                        Майки
+                        Жакеты, жилеты
                       </a>
                     </li>
                     <li class="submenu__item">
                       <a href="#" class="submenu__link">
-                        Платья
+                        Кардиганы
+                      </a>
+                    </li>
+                    <li class="submenu__item">
+                      <a href="#" class="submenu__link">
+                        Комбинезоны
+                      </a>
+                    </li>
+                    <li class="submenu__item">
+                      <a href="#" class="submenu__link">
+                        Комплекты
+                      </a>
+                    </li>
+                    <li class="submenu__item">
+                      <a href="#" class="submenu__link">
+                        Костюмы
+                      </a>
+                    </li>
+                    <li class="submenu__item">
+                      <a href="#" class="submenu__link">
+                        Куртки
+                      </a>
+                    </li>
+                    <li class="submenu__item">
+                      <a href="#" class="submenu__link">
+                        Пальто
+                      </a>
+                    </li>
+                    <li class="submenu__item">
+                      <a href="#" class="submenu__link">
+                        Платья и сарафаны
+                      </a>
+                    </li>
+                    <li class="submenu__item">
+                      <a href="#" class="submenu__link">
+                        Плащи
+                      </a>
+                    </li>
+                    <li class="submenu__item">
+                      <a href="#" class="submenu__link">
+                        Шорты
+                      </a>
+                    </li>
+                    <li class="submenu__item">
+                      <a href="#" class="submenu__link">
+                        Юбки
+                      </a>
+                    </li>
+                    <li class="submenu__item">
+                      <a href="#" class="submenu__link">
+                        PLUS SIZE
+                      </a>
+                    </li>
+                    <li class="submenu__item">
+                      <a href="#" class="submenu__link">
+                        Последний размер
                       </a>
                     </li>
                   </ul>
@@ -222,6 +284,7 @@
               </ul>
             </div>
           </div>
+          <div class="header-progress" style="background-color: #0C0C0C;"></div>
         </div>
       </div>
     </header>

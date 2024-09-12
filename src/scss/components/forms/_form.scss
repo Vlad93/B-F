@@ -31,6 +31,7 @@
   }
 }
 .form-input {
+  display: block;
   width: 100%;
   position: relative;
   padding: resp-size(13) resp-size(26);
@@ -83,8 +84,9 @@
     content: "*";
     display: block;
     position: absolute;
-    top: -8px;
+    top: 0;
     left: 0;
+    transform: translateY(-75%);
     font-size: calc((20 / 1920)* 100vw);
     line-height: 1em;
     color: #ff0a0a;

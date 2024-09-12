@@ -17,7 +17,7 @@
     font-weight: 500;
     color: $white;
     transform-origin: 50% 50%;
-    transition: transform .3s ease;
+    transition: transform .3s ease, color .3s ease;
     @include _1200 {
       font-size: 16px;
     }
@@ -59,8 +59,8 @@
     &-icon {
       width: 16px;
       height: 16px;
-      fill: transparent;
-      transition: transform .3s ease;
+      fill: #fff;
+      transition: transform .3s ease, fill .3s ease;
     }
   }
   &__item.is-active  &__link {

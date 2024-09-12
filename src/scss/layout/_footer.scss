@@ -141,7 +141,7 @@
     &-created {
       &-link {
         display: block;
-        width: resp-size(110);
+        width: resp-size(165);
         height: auto;
         & img {
           width: 100%;
@@ -150,7 +150,7 @@
           width: 110px;
         }
         @include _767 {
-          width: resp-size(110, 363);
+          width: resp-size(115, 312);
         }
       }
     }

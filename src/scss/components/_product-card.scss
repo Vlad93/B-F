@@ -131,7 +131,7 @@
       bottom: 0;
     }
     @include _767 {
-      padding: resp-size(6, 360) resp-size(10, 360);
+      padding: resp-size(10, 360) resp-size(10, 360);
       font-size: resp-size(12, 360);
     }
   }
