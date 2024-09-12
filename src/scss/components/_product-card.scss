@@ -64,6 +64,7 @@
     align-items: flex-start;
     width: 100%;
     padding: resp-size(14) resp-size(13);
+    background-color: #fff;
     @include _767 {
       padding: resp-size(5, 360) resp-size(7, 360) resp-size(8, 360);
     }

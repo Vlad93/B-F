@@ -1169,6 +1169,18 @@ $(document).ready(function () {
       },
     });
   });
+  $('[productGallerySlider_js]').each(function () {
+    var swiper = new Swiper($(this)[0], {
+      direction: 'horizontal',
+      slidesPerView: 1,
+      spaceBetween: 10,
+      pagination: {
+        el: ".swiper-pagination",
+        bullets: true,
+        clickable: true,
+      },
+    })
+  });
   $('[sertificateSlider_js]').each(function () {
     var swiper = new Swiper($(this)[0], {
       direction: 'horizontal',

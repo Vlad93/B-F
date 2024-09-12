@@ -12,8 +12,11 @@
   // margin-bottom: 30px;
   @include font(Montserrat, 400, sans-serif);
   line-height: 1.4em;
-  font-size: 48px;
+  font-size: resp-size(48);
   color: $primary;
+  @include _767 {
+    font-size: resp-size(24, 360);
+  }
 }
 
 .weight-light {

@@ -22,9 +22,9 @@
 // @import "components/slider";
 @import "components/product-card";
 // @import "components/service-card";
-// @import "components/forms/select";
+@import "components/forms/select";
 // @import "components/forms/form-bg";
-// @import "components/forms/form";
+@import "components/forms/form";
 // @import "components/agreement";
 // @import "components/team-card";
 @import "components/video-item";
@@ -79,3 +79,8 @@
 @import "pages/about/caroosel";
 @import "pages/about/seo-about";
 @import "pages/about/partners";
+
+@import "pages/catalog/catalog";
+
+@import "pages/cooperation/cooperation-top";
+@import "pages/cooperation/cooperation-feedback";
