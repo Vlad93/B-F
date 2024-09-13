@@ -104,14 +104,16 @@
   }
   &__sizes-item {
     border: 1px solid $primary;
-    padding: resp-size(7) resp-size(10);
+    line-height: 1em;
+    display: flex;
+    padding: resp-size(10) resp-size(10);
     @include _767 {
       display: flex;
       padding: resp-size(5, 360) resp-size(5, 360);
     }
   }
   &__size {
-    font-size: 16px;
+    font-size: resp-size(16);
     line-height: 1em;
     @include _767 {
       font-size: resp-size(10, 360);

@@ -32,7 +32,7 @@
       box-shadow: none;
     }
     &__size {
-      font-size: 16px;
+      font-size: resp-size(16);
       line-height: 1em;
       @include _767 {
         font-size: resp-size(16, 360);
@@ -40,7 +40,7 @@
     }
     &__sizes-item {
       border: 1px solid $primary;
-      padding: resp-size(7) resp-size(10);
+      padding: resp-size(10) resp-size(10);
       @include _767 {
         padding: resp-size(7, 360) resp-size(7, 360);
       }
