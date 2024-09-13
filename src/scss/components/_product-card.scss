@@ -60,12 +60,13 @@
   &__content-wrap {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: resp-size(16);
     align-items: flex-start;
     width: 100%;
     padding: resp-size(14) resp-size(13);
     background-color: #fff;
     @include _767 {
+      gap: resp-size(10, 360);
       padding: resp-size(5, 360) resp-size(7, 360) resp-size(8, 360);
     }
   }

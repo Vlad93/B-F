@@ -51,4 +51,8 @@
   &-prev &-icon {
     transform: rotate(90deg);
   }
+  &-icon {
+    width: resp-size(20);
+    height: resp-size(20);
+  }
 }

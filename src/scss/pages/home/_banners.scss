@@ -22,9 +22,9 @@
 }
 .banners-swiper {
   &__wrapper {
-    height: calc((901 / 1920)* 100vw);
+    height: calc((956 / 1920)* 100vw);
     @include _992 {
-      height: calc((878 / 1920)* 100vw);
+      height: calc((958 / 1920)* 100vw);
     }
     @include _767 {
       height: auto;
